@@ -1,0 +1,19 @@
+footer{
+    width: 100%;
+    height: 300px;
+    background-color: $second-color;
+
+    @include flex-center();
+
+    .riot-games{
+        width: 1200px;
+
+        display: flex;
+        justify-content: center;
+
+        img{
+            width: 210px;
+            height: 210px;
+        }
+    }
+}

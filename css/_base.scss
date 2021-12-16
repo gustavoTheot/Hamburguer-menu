@@ -1,0 +1,23 @@
+$primary-color: #FD4255;
+$second-color: #131313;
+
+@import url('https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Saira+Stencil+One&family=Teko:wght@700&display=swap');
+
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+

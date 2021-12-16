@@ -1,0 +1,147 @@
+@media screen and (max-width: 1240px){
+    header{
+        .menu{
+            width: 1000px;
+        }
+    }
+
+
+    footer{
+        .riot-games{
+            width: 1000px; 
+        }
+    }
+}
+
+@media screen and (max-width: 1020px){
+    header{
+        .menu{
+            width: 700px;
+        }
+
+        .hamburguer{
+            height: 26px;
+
+            @include flex-center();
+            flex-direction: column;
+
+            
+            .line{
+                margin: 2px 0 2px 0;
+                width: 32px;
+                height: 2px;
+                background-color: white;
+                transition-timing-function: ease;
+                transition-duration: 0.2s;
+            }
+
+            &:hover{
+                transition-timing-function: ease;
+                transition-duration: 0.2s;
+                transform: scale(1.2);
+            }
+        }
+
+        .list{
+            z-index: 1;
+            position: absolute;
+            top: 130px;
+            right: 0;
+            width: 46vw;
+            height: 92vw;
+
+            transform: translateX(100%);
+            background-color: $primary-color;
+
+            display: flex;
+            justify-content: center;
+
+            transition-duration: 0.2s;
+            transition-timing-function: ease;
+
+            ul{
+                flex-direction: column;
+                li{
+                    margin: 20px 0 20px 0;
+                    width: 100%;
+                    &:hover{
+                       width: 40vw;
+                    }
+                }
+            }
+        }
+    }
+
+    main{
+        .session{
+            .carousel {
+                .inform-valorant{
+                    p{
+                        font-size: 18px;
+                    }
+                }
+
+                .name-valorant{
+                    h1{
+                        font-size: 140px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 860px){
+    header{
+        .menu{
+            width: 600px;
+            justify-content: center;
+
+            .logo{
+                display: none;
+            }
+
+            .list{
+                width: 100%;
+                ul{
+                    li{
+                        width: 90vw;
+                    }
+                }
+            }
+        }
+
+        main{
+            
+            .carousel{
+                .name-valorant{
+                    h1{
+                        font-size: 100px;
+                    }
+                }
+            }
+        
+        }
+    }
+
+    main{
+        .session{
+            .carousel {
+                .inform-valorant{
+                    p{
+                        font-size: 18px;
+                    }
+                }
+
+                .name-valorant{
+                    h1{
+                        font-size: 130px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
